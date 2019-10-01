@@ -1,0 +1,59 @@
+<!DOCTYPE html  >
+<html lang="en" class=" js cssgradients csstransforms csstransitions svg inlinesvg svgclippaths"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+
+    <title>Placement Portal</title>
+
+    <!-- Loading third party fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+
+    <!-- Loading main css file -->
+    <link rel="stylesheet" href="index.css">
+
+    <!--[if lt IE 9]>
+    <script src="index.js"></script>
+    <script src="js/ie-support/respond.js"></script>
+    <![endif]-->
+    <style>
+        .overlay{background:rgba(0,0,0,0.5);position:fixed;z-index:2;left:0;top:0;width:100%;height:100%;display:none}
+    </style>
+</head>
+<script>
+    $('.datepicker').pickadate({
+        weekdaysShort: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+        showMonthsShort: true
+    })
+</script>
+<body style="margin-left:30%;margin-right:30%;margin-top:0%;margin-bottom:0%">
+<div style="text-align: center;">
+    <form action="" method="post" class="signup-form">
+        <div class="form-header">
+            <h2>Welcome<br> Sakec Placement Portal</h2>
+            <p align="justify">Mahavir Education Trust was established in the year 1983 with the main purpose of
+                promoting technical education with generous donations of two main donors viz.,<br>
+                Shrimati Laxmiben Karamshibhai Shah Trust &amp; Shah Lalji Velji Anchorwala.</p>
+        </div>
+        <div class="form-content">
+            <p style="color:#fff;text-align:center"></p>
+            <p><input type="text" placeholder="Username: Registration No." name="reg_id"></p>
+            <div class="md-form">
+                <input placeholder="Selected date" type="text" id="date-picker-example" class="form-control datepicker">
+                <label for="date-picker-example">Try me...</label>
+            </div>
+            <p>
+                <input type="submit" name="login" value="Sign In">
+            </p>
+        </div>
+        <div class="overlay"></div>
+    </form>
+</div>
+<script src="./front/js/jquery-1.11.1.min.js"></script>
+<script src="./front/js/plugins.js"></script>
+<script src="./front/js/app.js"></script>
+
+
+
+</body>
+</html>
